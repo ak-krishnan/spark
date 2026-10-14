@@ -1,0 +1,36 @@
+AmazonReviewRDD — Spark Execution Results
+
+Application: AmazonReviewRDD
+Spark Version: 3.5.1
+Scala Runtime: 2.12.18
+Java Version: 17.0.20.1
+Execution Mode: local[4]
+
+RDD Creation: Successful
+Total Training Reviews: 3600000
+Negative Reviews: 1800000
+Positive Reviews: 1800000
+Number of Input Partitions: 12
+Total Word Elements: 275519555
+
+Key-Value RDD:
+Created label-title pairs successfully.
+
+Sentiment Aggregation:
+(1,1800000)
+(2,1800000)
+
+RDD Lineage:
+Inspected using toDebugString.
+
+Persistence:
+labelsRDD: StorageLevel(memory, deserialized, 1 replicas)
+wordsRDD: StorageLevel(disk, memory, deserialized, 1 replicas)
+
+Word RDD:
+12 partitions persisted.
+Memory warnings occurred because some partitions
+could not fit in available storage memory.
+The word-count operation completed successfully.
+
+Application completed and returned to the terminal prompt.

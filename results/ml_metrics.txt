@@ -1,0 +1,13 @@
+Amazon Review Sentiment Classification
+======================================
+Dataset: Amazon Polarity
+Total reviews: 3600000
+Training reviews: 2880586
+Testing reviews: 719414
+Model: Logistic Regression
+Features: HashingTF (65536 dimensions)
+Accuracy: 0.8893
+Weighted Precision: 0.8894
+Weighted Recall: 0.8893
+F1-score: 0.8893
+ROC-AUC: 0.9533

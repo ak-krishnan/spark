@@ -1,0 +1,134 @@
+26/10/13 18:03:47 WARN Utils: Your hostname, mithun-HP-EliteBook-840-G6 resolves to a loopback address: 127.0.1.1; using 10.12.117.197 instead (on interface wlp0s20f3)
+26/10/13 18:03:47 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/10/13 18:03:48 INFO SparkContext: Running Spark version 3.5.1
+26/10/13 18:03:48 INFO SparkContext: OS info Linux, 7.0.0-38-generic, amd64
+26/10/13 18:03:48 INFO SparkContext: Java version 17.0.20.1
+26/10/13 18:03:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/13 18:03:48 INFO ResourceUtils: ==============================================================
+26/10/13 18:03:48 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/13 18:03:48 INFO ResourceUtils: ==============================================================
+26/10/13 18:03:48 INFO SparkContext: Submitted application: AmazonReviewRDD
+26/10/13 18:03:48 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/13 18:03:48 INFO ResourceProfile: Limiting resource is cpu
+26/10/13 18:03:48 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/13 18:03:48 INFO SecurityManager: Changing view acls to: hadoop
+26/10/13 18:03:48 INFO SecurityManager: Changing modify acls to: hadoop
+26/10/13 18:03:48 INFO SecurityManager: Changing view acls groups to: 
+26/10/13 18:03:48 INFO SecurityManager: Changing modify acls groups to: 
+26/10/13 18:03:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoop; groups with view permissions: EMPTY; users with modify permissions: hadoop; groups with modify permissions: EMPTY
+26/10/13 18:03:48 INFO Utils: Successfully started service 'sparkDriver' on port 38667.
+26/10/13 18:03:48 INFO SparkEnv: Registering MapOutputTracker
+26/10/13 18:03:48 INFO SparkEnv: Registering BlockManagerMaster
+26/10/13 18:03:48 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/13 18:03:48 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/13 18:03:48 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/13 18:03:48 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8359c27f-8d00-4446-8da4-ad43a192395f
+26/10/13 18:03:48 INFO MemoryStore: MemoryStore started with capacity 2.2 GiB
+26/10/13 18:03:48 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/13 18:03:48 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/10/13 18:03:48 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+26/10/13 18:03:48 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+26/10/13 18:03:48 INFO SparkContext: Added JAR file:/home/hadoop/AmazonSparkProject/AmazonReviewRDD.jar at spark://10.12.117.197:38667/jars/AmazonReviewRDD.jar with timestamp 1791894828175
+26/10/13 18:03:48 INFO Executor: Starting executor ID driver on host 10.12.117.197
+26/10/13 18:03:48 INFO Executor: OS info Linux, 7.0.0-38-generic, amd64
+26/10/13 18:03:48 INFO Executor: Java version 17.0.20.1
+26/10/13 18:03:48 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/10/13 18:03:48 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@28f4f300 for default.
+26/10/13 18:03:48 INFO Executor: Fetching spark://10.12.117.197:38667/jars/AmazonReviewRDD.jar with timestamp 1791894828175
+26/10/13 18:03:48 INFO TransportClientFactory: Successfully created connection to /10.12.117.197:38667 after 22 ms (0 ms spent in bootstraps)
+26/10/13 18:03:48 INFO Utils: Fetching spark://10.12.117.197:38667/jars/AmazonReviewRDD.jar to /tmp/spark-cc13fc27-4a0d-43d7-9a4a-48fd75ff4c78/userFiles-03a053b0-5383-4931-9b34-62cf331c1fb4/fetchFileTemp10077603829574713539.tmp
+26/10/13 18:03:48 INFO Executor: Adding file:/tmp/spark-cc13fc27-4a0d-43d7-9a4a-48fd75ff4c78/userFiles-03a053b0-5383-4931-9b34-62cf331c1fb4/AmazonReviewRDD.jar to class loader default
+26/10/13 18:03:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36673.
+26/10/13 18:03:48 INFO NettyBlockTransferService: Server created on 10.12.117.197:36673
+26/10/13 18:03:48 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/13 18:03:48 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.12.117.197, 36673, None)
+26/10/13 18:03:48 INFO BlockManagerMasterEndpoint: Registering block manager 10.12.117.197:36673 with 2.2 GiB RAM, BlockManagerId(driver, 10.12.117.197, 36673, None)
+26/10/13 18:03:48 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.12.117.197, 36673, None)
+26/10/13 18:03:48 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.12.117.197, 36673, None)
+RDD created successfully
+Total reviews: 3600000
+First five sentiment labels:
+2
+2
+2
+2
+2
+Negative review count: 1800000
+First five label-title pairs:
+(2,Stuning even for the non-gamer)
+(2,The best soundtrack ever to anything.)
+(2,Amazing!)
+(2,Excellent Soundtrack)
+(2,Remember, Pull Your Jaw Off The Floor After Hearing it)
+Sentiment distribution:
+(1,1800000)
+(2,1800000)
+Number of partitions: 12
+Records per partition:
+298935
+302167
+302477
+302238
+302745
+304769
+305138
+307818
+307444
+308217
+308548
+249504
+Word RDD lineage:
+(12) MapPartitionsRDD[16] at flatMap at AmazonReviewRDD.scala:24 []
+ |   MapPartitionsRDD[14] at rdd at AmazonReviewRDD.scala:22 []
+ |   SQLExecutionRDD[13] at rdd at AmazonReviewRDD.scala:22 []
+ |   MapPartitionsRDD[12] at rdd at AmazonReviewRDD.scala:22 []
+ |   MapPartitionsRDD[11] at rdd at AmazonReviewRDD.scala:22 []
+ |   FileScanRDD[10] at rdd at AmazonReviewRDD.scala:22 []
+Sentiment aggregation lineage:
+(12) ShuffledRDD[20] at reduceByKey at AmazonReviewRDD.scala:46 []
+ +-(12) MapPartitionsRDD[19] at map at AmazonReviewRDD.scala:46 []
+    |   MapPartitionsRDD[15] at map at AmazonReviewRDD.scala:23 []
+    |   MapPartitionsRDD[14] at rdd at AmazonReviewRDD.scala:22 []
+    |   SQLExecutionRDD[13] at rdd at AmazonReviewRDD.scala:22 []
+    |   MapPartitionsRDD[12] at rdd at AmazonReviewRDD.scala:22 []
+    |   MapPartitionsRDD[11] at rdd at AmazonReviewRDD.scala:22 []
+    |   FileScanRDD[10] at rdd at AmazonReviewRDD.scala:22 []
+Cached label count: 3600000
+Label RDD storage level: StorageLevel(memory, deserialized, 1 replicas)
+26/10/13 18:04:23 WARN MemoryStore: Not enough space to cache rdd_16_3 in memory! (computed 548.6 MiB so far)
+26/10/13 18:04:23 WARN BlockManager: Persisting block rdd_16_3 to disk instead.
+26/10/13 18:04:23 WARN MemoryStore: Not enough space to cache rdd_16_0 in memory! (computed 550.1 MiB so far)
+26/10/13 18:04:23 WARN BlockManager: Persisting block rdd_16_0 to disk instead.
+26/10/13 18:04:23 WARN MemoryStore: Not enough space to cache rdd_16_1 in memory! (computed 550.1 MiB so far)
+26/10/13 18:04:23 WARN BlockManager: Persisting block rdd_16_1 to disk instead.
+26/10/13 18:04:26 WARN MemoryStore: Not enough space to cache rdd_16_2 in memory! (computed 620.5 MiB so far)
+26/10/13 18:04:26 WARN BlockManager: Persisting block rdd_16_2 to disk instead.
+26/10/13 18:04:37 WARN MemoryStore: Not enough space to cache rdd_16_0 in memory! (computed 366.7 MiB so far)
+26/10/13 18:04:39 WARN MemoryStore: Not enough space to cache rdd_16_1 in memory! (computed 825.1 MiB so far)
+26/10/13 18:04:42 WARN MemoryStore: Not enough space to cache rdd_16_2 in memory! (computed 975.4 MiB so far)
+26/10/13 18:04:47 WARN MemoryStore: Not enough space to cache rdd_16_4 in memory! (computed 412.6 MiB so far)
+26/10/13 18:04:47 WARN BlockManager: Persisting block rdd_16_4 to disk instead.
+26/10/13 18:04:47 WARN MemoryStore: Not enough space to cache rdd_16_6 in memory! (computed 183.4 MiB so far)
+26/10/13 18:04:47 WARN BlockManager: Persisting block rdd_16_6 to disk instead.
+26/10/13 18:04:48 WARN MemoryStore: Not enough space to cache rdd_16_7 in memory! (computed 103.1 MiB so far)
+26/10/13 18:04:48 WARN BlockManager: Persisting block rdd_16_7 to disk instead.
+26/10/13 18:04:54 WARN MemoryStore: Not enough space to cache rdd_16_5 in memory! (computed 831.6 MiB so far)
+26/10/13 18:04:54 WARN BlockManager: Persisting block rdd_16_5 to disk instead.
+26/10/13 18:05:03 WARN MemoryStore: Not enough space to cache rdd_16_6 in memory! (computed 122.2 MiB so far)
+26/10/13 18:05:03 WARN MemoryStore: Not enough space to cache rdd_16_5 in memory! (computed 369.6 MiB so far)
+26/10/13 18:05:04 WARN MemoryStore: Not enough space to cache rdd_16_4 in memory! (computed 618.8 MiB so far)
+26/10/13 18:05:09 WARN MemoryStore: Not enough space to cache rdd_16_7 in memory! (computed 820.8 MiB so far)
+26/10/13 18:05:12 WARN MemoryStore: Not enough space to cache rdd_16_11 in memory! (computed 8.6 MiB so far)
+26/10/13 18:05:12 WARN BlockManager: Persisting block rdd_16_11 to disk instead.
+26/10/13 18:05:12 WARN MemoryStore: Not enough space to cache rdd_16_10 in memory! (computed 364.8 MiB so far)
+26/10/13 18:05:12 WARN BlockManager: Persisting block rdd_16_10 to disk instead.
+26/10/13 18:05:13 WARN MemoryStore: Not enough space to cache rdd_16_8 in memory! (computed 367.7 MiB so far)
+26/10/13 18:05:13 WARN BlockManager: Persisting block rdd_16_8 to disk instead.
+26/10/13 18:05:13 WARN MemoryStore: Not enough space to cache rdd_16_9 in memory! (computed 368.6 MiB so far)
+26/10/13 18:05:13 WARN BlockManager: Persisting block rdd_16_9 to disk instead.
+26/10/13 18:05:26 WARN MemoryStore: Not enough space to cache rdd_16_9 in memory! (computed 245.8 MiB so far)
+26/10/13 18:05:26 WARN MemoryStore: Not enough space to cache rdd_16_8 in memory! (computed 367.7 MiB so far)
+26/10/13 18:05:29 WARN MemoryStore: Not enough space to cache rdd_16_11 in memory! (computed 553.0 MiB so far)
+26/10/13 18:05:32 WARN MemoryStore: Not enough space to cache rdd_16_10 in memory! (computed 820.8 MiB so far)
+Total word count: 275519555
+Word RDD storage level: StorageLevel(disk, memory, deserialized, 1 replicas)
